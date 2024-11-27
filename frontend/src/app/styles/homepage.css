@@ -1,0 +1,337 @@
+.homepage {
+  width: 100vw;
+  min-height: 100vh;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.navbar {
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rem 1rem;
+  position: sticky;
+  top: 0vh;
+  z-index: 10;
+}
+.companyInfo {
+  width: 10rem;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  cursor: pointer;
+}
+.logo {
+  width: 2rem;
+  height: 2rem;
+}
+.companyName {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+.profile {
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding-right: 0.5rem;
+  cursor: pointer;
+}
+.mainPage {
+  width: 100vw;
+  min-height: 90vh;
+  height: auto;
+  padding: 0.5rem 1rem;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+.user {
+  font-weight: 600;
+}
+.verticalNavbar {
+  width: 10rem;
+  height: 90vh;
+  position: sticky;
+  top: 10vh;
+  border: 1px solid rgb(213, 210, 210);
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.navigation {
+  width: 85%;
+  height: 3rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.navTo {
+  font-weight: 500;
+}
+.hamburger {
+  display: none;
+}
+.navList {
+  width: 6rem;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  position: absolute;
+  top: 10vh;
+  right: 1rem;
+}
+.navListItem {
+  height: 2rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+.analysis {
+  border: 1px solid rgb(213, 210, 210);
+  border-radius: 1rem;
+  flex-direction: row;
+  padding: 1rem 0.5rem;
+  gap: 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  justify-content: center;
+}
+.subjectWiseAnalysis {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding-bottom: 1rem;
+}
+.subject {
+  width: 95%;
+  height: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem;
+  border: 1px solid rgb(213, 210, 210);
+  border-radius: 0.5rem;
+}
+.subjectLogo {
+  width: 26px;
+  height: 26px;
+}
+.subjectName {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+}
+.update {
+  width: 6rem;
+  height: 2.5rem;
+  background: rgb(7, 7, 83);
+  color: white;
+  border-radius: 0.3rem;
+}
+.scoreCard {
+  width: 95%;
+  height: 5rem;
+  border: 1px solid rgb(213, 210, 210);
+  border-radius: 0.5rem;
+}
+.scoreContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  height: 3.5rem;
+  justify-content: space-evenly;
+}
+.topicWiseAnalysisAndComment {
+  width: 45%;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.analysisGraph {
+  width: 95%;
+  height: 50vh;
+  border-radius: 0.5rem;
+  border: 1px solid rgb(213, 210, 210);
+}
+.topicWiseAnalysis {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid rgb(213, 210, 210);
+  border-radius: 0.5rem;
+}
+.topicCompletion {
+  width: 100%;
+  padding: 0.3rem 0.5rem;
+}
+.topic {
+  width: 100%;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+}
+.animation {
+  width: 100%;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+}
+.colorDiv {
+  background-color: green;
+  height: 0.4rem;
+  border-radius: 0.5rem;
+}
+.comment {
+  width: 95%;
+  min-height: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  border: 1px solid rgb(213, 210, 210);
+  border-radius: 0.5rem;
+  padding: 0.3rem 0.5rem;
+}
+.data2 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.formContainer {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0vh;
+  z-index: 100;
+}
+.form {
+  width: 40vw;
+  min-height: 60vh;
+  background-color: white;
+  border: 1px solid rgb(213, 210, 210);
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.ctrlButtons {
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+.cancelBtn {
+  width: 6rem;
+  height: 2.5rem;
+  background: white;
+  color: rgb(7, 7, 83);
+  border-radius: 0.3rem;
+  border: 1px solid rgb(7, 7, 83);
+  border-radius: 0.9rem;
+}
+.saveBtn {
+  width: 6rem;
+  height: 2.5rem;
+  background: rgb(7, 7, 83);
+  color: white;
+  border-radius: 0.3rem;
+}
+.title {
+  width: 90%;
+  height: 4rem;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.updateFieds {
+  width: 90%;
+  height: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.inputTag {
+  width: 45%;
+  height: 2.5rem;
+  border-radius: 0.3rem;
+  border: 1px solid rgb(7, 7, 83);
+  padding-left: 1rem;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input:focus {
+  outline: none;
+  height: 2.9rem;
+  padding: 0.1rem 0rem;
+  padding-left: 1rem;
+}
+.doubtnutChart {
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 500px) {
+  .verticalNavbar {
+    display: none;
+  }
+  .profile {
+    display: none;
+  }
+  .hamburger {
+    display: flex;
+  }
+}
+@media screen and (max-width: 800px) {
+  .analysis {
+    width: 80vw;
+    flex-direction: column;
+  }
+  .subjectWiseAnalysis {
+    width: 95%;
+  }
+  .topicWiseAnalysis {
+    width: 95%;
+    border: 1px solid rgb(213, 210, 210);
+    border-radius: 1rem;
+  }
+  .topicWiseAnalysisAndComment {
+    width: 95%;
+  }
+  .form {
+    width: 80vw;
+  }
+}
