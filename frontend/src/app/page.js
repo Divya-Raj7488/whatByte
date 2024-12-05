@@ -155,19 +155,31 @@ export default function Home() {
   }, []);
 
   function updateScore() {
-    if (score === "" || percentile == "" || score == "") {
-      prompt("Fields cannot be empty");
+    if (rank.length > 0 && percentile.length > 0 && score.length > 0) {
+      if (
+        percentile < 100 &&
+        percentile >= 0 &&
+        score <= 15 &&
+        score > 0 &&
+        rank > 0
+      ) {
+        const updatedUser = {
+          rank: rank,
+          percentile: percentile,
+          score: score,
+        };
+        localStorage.setItem("user", JSON.stringify(updatedUser));
+        setShowForm(!showForm);
+        getUser();
+      } else {
+        prompt("Invalid Values. Please check your input");
+      }
+    } else {
+      prompt("Please input all the values. Fields cannot be empty");
     }
-    if (percentile > 100 || score > 15) {
-      prompt("incorrect data");
-    }
-    const updatedUser = { rank: rank, percentile: percentile, score: score };
-    localStorage.setItem("user", JSON.stringify(updatedUser));
     setRank("");
     setPercentile("");
     setScore("");
-    setShowForm(!showForm);
-    getUser();
   }
   return (
     <div className="homepage">
@@ -243,6 +255,9 @@ export default function Home() {
                 className="cancelBtn"
                 onClick={() => {
                   setShowForm(!showForm);
+                  setPercentile("")
+                  setRank("")
+                  setScore("")
                 }}
               >
                 Cancel
